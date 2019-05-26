@@ -21,3 +21,27 @@
     }
   }
 }
+
+.col-sm-4 {
+  .container__content {
+    width: 100%;
+    height: 100%;
+    background: lightsalmon;
+
+    & > p {
+      color: #777;
+    }
+  }
+} 
+
+.col-sm-2 {
+  .container__content {
+    width: 100%;
+    height: 100%;
+    background: lightpink;
+
+    & > p {
+      color: #777;
+    }
+  }
+}
