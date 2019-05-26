@@ -3,25 +3,31 @@
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.col-lg-6 {
-  background: #bbb000; }
-  .col-lg-6 > p {
-    color: #777; }
+.col.no-padding {
+  padding: 0; }
 
-.col-sm-3 {
-  max-height: 400px;
+.col-lg-8.no-padding {
+  padding: 0; }
+
+.col-lg-6 {
+  background: #bbb000;
   -o-object-fit: cover;
-  object-fit: cover;
-  background: cornflowerblue; }
-  .col-sm-3 > p {
+  object-fit: cover; }
+  .col-lg-6.no-padding {
+    padding: 0; }
+  .col-lg-6 > p {
     color: #777; }
 
 .col-sm-4 {
   background: lightsalmon; }
+  .col-sm-4.no-padding {
+    padding: 0; }
   .col-sm-4 > p {
     color: #777; }
 
 .col-sm-2 {
   background: lightpink; }
+  .col-sm-2.no-padding {
+    padding: 0; }
   .col-sm-2 > p {
     color: #777; }

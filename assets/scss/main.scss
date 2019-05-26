@@ -1,18 +1,26 @@
 .row {
   align-items: flex-start;
 }
-.col-lg-6 {
-  background: #bbb000;
 
-  & > p {
-    color: #777;
+.col {
+  &.no-padding {
+    padding: 0;
   }
 }
 
-.col-sm-3 {
-  max-height: 400px;
+.col-lg-8 {
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.col-lg-6 {
+  background: #bbb000;
   object-fit: cover;
-  background: cornflowerblue;
+
+  &.no-padding {
+    padding: 0;
+  }
 
   & > p {
     color: #777;
@@ -20,7 +28,11 @@
 }
 
 .col-sm-4 {
-    background: lightsalmon;
+  background: lightsalmon;
+
+  &.no-padding {
+    padding: 0;
+  }
 
   & > p {
     color: #777;
@@ -29,6 +41,10 @@
 
 .col-sm-2 {
   background: lightpink;
+
+  &.no-padding {
+    padding: 0;
+  }
 
   & > p {
     color: #777;
