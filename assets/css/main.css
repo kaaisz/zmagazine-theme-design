@@ -1,3 +1,8 @@
+.row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
 .col-lg-6 {
   background: #bbb000; }
   .col-lg-6 > p {
