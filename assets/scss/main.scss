@@ -1,47 +1,33 @@
 .col-lg-6 {
-  .container__content {
-    width: 100%;
-    height: 100%;
-    background: #bbb000;
+  background: #bbb000;
 
-    & > p {
-      color: #777;
-    }
+  & > p {
+    color: #777;
   }
 }
 
 .col-sm-3 {
-  .container__content {
-    width: 100%;
-    height: 100%;
-    background: cornflowerblue;
+  max-height: 400px;
+  object-fit: cover;
+  background: cornflowerblue;
 
-    & > p {
-      color: #777;
-    }
+  & > p {
+    color: #777;
   }
 }
 
 .col-sm-4 {
-  .container__content {
-    width: 100%;
-    height: 100%;
     background: lightsalmon;
 
-    & > p {
-      color: #777;
-    }
+  & > p {
+    color: #777;
   }
-} 
+}
 
 .col-sm-2 {
-  .container__content {
-    width: 100%;
-    height: 100%;
-    background: lightpink;
+  background: lightpink;
 
-    & > p {
-      color: #777;
-    }
+  & > p {
+    color: #777;
   }
 }
