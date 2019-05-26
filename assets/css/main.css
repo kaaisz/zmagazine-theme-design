@@ -1,0 +1,13 @@
+.col-lg-6 .container__content {
+  width: 100%;
+  height: 100%;
+  background: #bbb000; }
+  .col-lg-6 .container__content > p {
+    color: #777; }
+
+.col-sm-3 .container__content {
+  width: 100%;
+  height: 100%;
+  background: cornflowerblue; }
+  .col-sm-3 .container__content > p {
+    color: #777; }
