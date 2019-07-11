@@ -1,12 +1,13 @@
 {
   "name": "zmagazine-theme-design",
   "version": "1.0.0",
-  "description": "",
+  "description": "Theme design for Z Magazine",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^4.0.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
