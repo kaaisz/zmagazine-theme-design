@@ -2,51 +2,19 @@
   align-items: flex-start;
 }
 
-.col {
-  &.no-padding {
-    padding: 0;
-  }
+.no-padding {
+  padding: 0;
 }
 
-.col-lg-8 {
-  &.no-padding {
-    padding: 0;
-  }
-}
+.col-lg-6.md-4 {
+  padding: 15px;
 
-.col-lg-6 {
-  background: #bbb000;
-  object-fit: cover;
+  & .col-lg-6.md-4 {
+    padding: 0 15px;
 
-  &.no-padding {
-    padding: 0;
-  }
-
-  & > p {
-    color: #777;
-  }
-}
-
-.col-sm-4 {
-  background: lightsalmon;
-
-  &.no-padding {
-    padding: 0;
-  }
-
-  & > p {
-    color: #777;
-  }
-}
-
-.col-sm-2 {
-  background: lightpink;
-
-  &.no-padding {
-    padding: 0;
-  }
-
-  & > p {
-    color: #777;
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      padding: 30px 15px 0;
+    }
   }
 }
