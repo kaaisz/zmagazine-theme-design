@@ -1,3 +1,18 @@
+// Breakpoints - definition from bootstrap official documentation
+$breakpoints: (
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+// invoke breakpoints
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+
 body {
   box-sizing: border-box;
   width: 100%;
@@ -12,15 +27,32 @@ body {
   padding: 0;
 }
 
-.col-lg-6.md-4 {
-  padding: 20px;
+.container-fluid {
+  @include mq(md) {
+    padding-right: 30px !important;
+    padding-left: 30px !important; 
+  }
 
-  & .col-lg-6.md-4 {
-    padding: 0 20px;
+  @include mq(xl) {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+}
 
-    &:nth-of-type(3),
-    &:nth-of-type(4) {
-      padding: 40px 20px 0;
-    }
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-8 {
+  padding-bottom: 30px;
+
+  @include mq(xl) {
+    padding-bottom: 40px;
+  }
+}
+
+@include mq(xl) {
+  .rect {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }

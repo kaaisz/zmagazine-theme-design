@@ -12,9 +12,29 @@ body {
 .no-padding {
   padding: 0; }
 
-.col-lg-6.md-4 {
-  padding: 20px; }
-  .col-lg-6.md-4 .col-lg-6.md-4 {
-    padding: 0 20px; }
-    .col-lg-6.md-4 .col-lg-6.md-4:nth-of-type(3), .col-lg-6.md-4 .col-lg-6.md-4:nth-of-type(4) {
-      padding: 40px 20px 0; }
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    padding-right: 30px !important;
+    padding-left: 30px !important; } }
+
+@media screen and (min-width: 1200px) {
+  .container-fluid {
+    padding-right: 40px !important;
+    padding-left: 40px !important; } }
+
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-8 {
+  padding-bottom: 30px; }
+  @media screen and (min-width: 1200px) {
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-6,
+    .col-lg-8 {
+      padding-bottom: 40px; } }
+
+@media screen and (min-width: 1200px) {
+  .rect {
+    padding-left: 20px !important;
+    padding-right: 20px !important; } }
