@@ -1,0 +1,30 @@
+// Breakpoints - definition from bootstrap official documentation
+$breakpoints: (
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+// color
+$colors: (
+  kinari: #FBFAF5,
+  murasakinezu: #71686C,
+  susu: #887F7A,
+  nezumi: #949495
+)!default;
+
+// typography
+$font-main: "Optima", "Georgia", Times, serif;
+$font-paragraph: "Baskerville", "Times New Roman", Times, serif;
+$font-accent: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
