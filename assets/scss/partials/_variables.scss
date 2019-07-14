@@ -7,12 +7,10 @@ $breakpoints: (
 ) !default;
 
 // color
-$colors: (
-  kinari: #FBFAF5,
-  murasakinezu: #71686C,
-  susu: #887F7A,
-  nezumi: #949495
-)!default;
+$color-kinari: #FBFAF5;
+$color-murasakinezu: #71686C;
+$color-susu: #887F7A;
+$color-nezumi: #949495;
 
 // typography
 $font-main: "Optima", "Georgia", Times, serif;

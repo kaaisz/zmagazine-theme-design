@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+.navbar {
+  justify-content: space-between;
+  @include mq(md) {
+    padding: 12px 30px;
+  }
+
+  @include mq(xl) {
+    padding: 12px 40px;
+  }
+
+  &-light .navbar-brand {
+    font-family: $font-main;
+    color: $color-murasakinezu;
+
+    &:hover {
+      color: $color-murasakinezu;
+    }
+  }
+
+  &-brand {
+    font-size: 24px;
+  }
+
+  &__menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

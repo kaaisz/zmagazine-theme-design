@@ -1,3 +1,31 @@
+.navbar {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    .navbar {
+      padding: 12px 30px; } }
+  @media screen and (min-width: 1200px) {
+    .navbar {
+      padding: 12px 40px; } }
+  .navbar-light .navbar-brand {
+    font-family: "Optima", "Georgia", Times, serif;
+    color: #71686C; }
+    .navbar-light .navbar-brand:hover {
+      color: #71686C; }
+  .navbar-brand {
+    font-size: 24px; }
+  .navbar__menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -39,3 +67,55 @@ body {
   .rect {
     padding-left: 20px;
     padding-right: 20px; } }
+
+.form_search {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #71686C; }
+  .form_search:focus {
+    outline: none; }
+  .form_search::-webkit-input-placeholder {
+    color: #949495;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; }
+  .form_search::-moz-placeholder {
+    color: #949495;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; }
+  .form_search:-ms-input-placeholder {
+    color: #949495;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; }
+  .form_search::-ms-input-placeholder {
+    color: #949495;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; }
+  .form_search::placeholder {
+    color: #949495;
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; }
+
+.btn_search, .btn_menu {
+  font-family: "Optima", "Georgia", Times, serif;
+  color: #71686C;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent; }
+  .btn_search:focus, .btn_menu:focus {
+    cursor: pointer;
+    outline: none; }

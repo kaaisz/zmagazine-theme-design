@@ -1,11 +1,12 @@
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/header";
 
 body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: map-get($colors, kinari);
+  background-color: $color-kinari;
 }
 
 .row {
@@ -43,5 +44,45 @@ body {
   .rect {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.form {
+  &_search {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $color-murasakinezu;
+    
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-nezumi;
+      font-family: $font-accent;
+      font-weight: $thin;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.btn {
+  &_search,
+  &_menu {
+    font-family: $font-main;
+    color: $color-murasakinezu;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+
+    &:focus {
+      cursor: pointer;
+      outline: none;
+    } 
   }
 }
