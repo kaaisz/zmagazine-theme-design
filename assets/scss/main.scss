@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  background-color: map-get($colors, kinari);
 }
 
 .row {
@@ -29,13 +30,13 @@ body {
 
 .container-fluid {
   @include mq(md) {
-    padding-right: 30px !important;
-    padding-left: 30px !important; 
+    padding-right: 30px;
+    padding-left: 30px; 
   }
 
   @include mq(xl) {
-    padding-right: 40px !important;
-    padding-left: 40px !important;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -52,7 +53,7 @@ body {
 
 @include mq(xl) {
   .rect {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
