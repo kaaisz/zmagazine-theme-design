@@ -25,7 +25,7 @@ function compileSass() {
     .pipe(sass())
     .pipe(autoprefixer(
       {
-        browsers: ['last 2 versions'],
+        overrideBrowserslist: ['last 2 versions'],
         cascade: false
       }
     ))
