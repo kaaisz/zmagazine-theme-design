@@ -89,6 +89,22 @@ p {
   }
 }
 
+.card {
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    border-radius: 0;
+  }
+}
+
 .btn {
   &_search,
   &_menu {

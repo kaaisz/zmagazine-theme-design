@@ -128,6 +128,17 @@ p {
     font-size: 14px;
     letter-spacing: 2px; }
 
+.card {
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease; }
+  .card:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .card .card-img-top {
+    border-radius: 0; }
+
 .btn_search, .btn_menu {
   font-family: "Optima", "Georgia", Times, serif;
   color: #71686C;
