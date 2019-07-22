@@ -17,16 +17,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    .navbar__menus .form_search {
+    .navbar__menus .menu {
+      margin: 0 0 0 32px; }
+    .navbar__menus .form_search,
+    .navbar__menus .btn_menu {
       display: none; }
-      @media screen and (min-width: 1200px) {
-        .navbar__menus .form_search {
+      @media screen and (min-width: 992px) {
+        .navbar__menus .form_search,
+        .navbar__menus .btn_menu {
           display: inline-block; } }
+    .navbar__menus .btn_menu {
+      padding: 0; }
     .navbar__menus .feather-search,
     .navbar__menus .feather-menu {
-      width: calc(24px + 16px);
-      color: #71686C;
-      padding-right: 8px; }
+      color: #71686C; }
+      @media screen and (min-width: 992px) {
+        .navbar__menus .feather-search,
+        .navbar__menus .feather-menu {
+          width: calc(24px + 16px);
+          padding: 0 8px 0 0; } }
 
 body {
   box-sizing: border-box;

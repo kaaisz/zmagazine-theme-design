@@ -29,19 +29,31 @@
     align-items: center;
     justify-content: space-between;
 
-    .form_search {
+    .menu {
+      margin: 0 0 0 32px;
+    }
+
+    .form_search,
+    .btn_menu {
       display: none;
 
-      @include mq(xl) {
+      @include mq(lg) {
         display: inline-block;
       }
     }
 
+    .btn_menu {
+      padding: 0;
+    }
+
     .feather-search,
     .feather-menu {
-      width: calc(24px + 16px);
       color: $color-murasakinezu;
-      padding-right: 8px;
+
+      @include mq(lg) {
+        width: calc(24px + 16px);
+        padding: 0 8px 0 0;
+      }
     }
   }
 }
