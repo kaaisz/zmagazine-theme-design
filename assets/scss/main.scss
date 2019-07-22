@@ -9,6 +9,22 @@ body {
   background-color: $color-kinari;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+  font-family: $font-main;
+  color: $color-murasakinezu
+}
+
+p {
+  font-family: $font-paragraph;
+  color: $color-susu;
+}
+
 .row {
   align-items: flex-start;
 }
@@ -29,19 +45,17 @@ body {
   }
 }
 
+.col,
 .col-lg-3,
 .col-lg-4,
+.col-lg-5,
 .col-lg-6,
+.col-lg-7,
 .col-lg-8 {
   padding-bottom: 30px;
 
   @include mq(xl) {
     padding-bottom: 40px;
-  }
-}
-
-@include mq(xl) {
-  .rect {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -84,5 +98,65 @@ body {
       cursor: pointer;
       outline: none;
     } 
+  }
+}
+
+.article {
+  &__category {
+    font-family: $font-accent;
+    font-size: 12px;
+    font-weight: $thin;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin: 16px 0 32px;
+  }
+
+  &__description{
+    font-size: 14px;
+    margin: 16px 0;
+  }
+
+  &__source {
+    display: inline-block;
+    font-size: 14px;
+    border-bottom: 1px solid $color-susu;
+    margin-bottom: 40px;
+  }
+
+  &__date {
+    font-family: $font-main;
+    font-size: 12px;
+  }
+
+  &__tags {
+    color: $color-susu;
+    font-family: $font-accent;
+    font-weight: $thin;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+}
+
+.related {
+  margin-top: 96px;
+
+  &__title {
+    font-size: 14px;
+    letter-spacing: 1.7px;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
   }
 }

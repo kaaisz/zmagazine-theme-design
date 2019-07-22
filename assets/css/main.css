@@ -33,6 +33,20 @@ body {
   height: 100%;
   background-color: #FBFAF5; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+  font-family: "Optima", "Georgia", Times, serif;
+  color: #71686C; }
+
+p {
+  font-family: "Baskerville", "Times New Roman", Times, serif;
+  color: #887F7A; }
+
 .row {
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -51,22 +65,25 @@ body {
     padding-right: 40px;
     padding-left: 40px; } }
 
+.col,
 .col-lg-3,
 .col-lg-4,
+.col-lg-5,
 .col-lg-6,
+.col-lg-7,
 .col-lg-8 {
   padding-bottom: 30px; }
   @media screen and (min-width: 1200px) {
+    .col,
     .col-lg-3,
     .col-lg-4,
+    .col-lg-5,
     .col-lg-6,
+    .col-lg-7,
     .col-lg-8 {
-      padding-bottom: 40px; } }
-
-@media screen and (min-width: 1200px) {
-  .rect {
-    padding-left: 20px;
-    padding-right: 20px; } }
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .form_search {
   background: transparent;
@@ -119,3 +136,53 @@ body {
   .btn_search:focus, .btn_menu:focus {
     cursor: pointer;
     outline: none; }
+
+.article__category {
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.article__title {
+  font-size: 24px;
+  margin: 16px 0 32px; }
+
+.article__description {
+  font-size: 14px;
+  margin: 16px 0; }
+
+.article__source {
+  display: inline-block;
+  font-size: 14px;
+  border-bottom: 1px solid #887F7A;
+  margin-bottom: 40px; }
+
+.article__date {
+  font-family: "Optima", "Georgia", Times, serif;
+  font-size: 12px; }
+
+.article__tags {
+  color: #887F7A;
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+
+.related {
+  margin-top: 96px; }
+  .related__title {
+    font-size: 14px;
+    letter-spacing: 1.7px; }
+  .related__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%; }
+  .related__img {
+    width: 100%; }
