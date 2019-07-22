@@ -47,6 +47,10 @@ p {
   font-family: "Optima", "Georgia", Times, serif;
   color: #71686C; }
 
+a:hover {
+  color: #71686C;
+  text-decoration: none; }
+
 p {
   font-family: "Baskerville", "Times New Roman", Times, serif;
   color: #887F7A; }

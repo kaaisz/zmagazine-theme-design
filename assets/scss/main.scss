@@ -20,6 +20,11 @@ p {
   color: $color-murasakinezu
 }
 
+a:hover {
+  color: $color-murasakinezu;
+  text-decoration: none;
+}
+
 p {
   font-family: $font-paragraph;
   color: $color-susu;
