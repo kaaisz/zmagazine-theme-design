@@ -4,6 +4,7 @@
   "description": "Theme design for Z Magazine",
   "main": "gulpfile.js",
   "dependencies": {
+    "feather-icons": "^4.22.1",
     "gulp": "^4.0.2"
   },
   "devDependencies": {

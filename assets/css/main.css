@@ -25,6 +25,10 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .navbar__menus .feather-search,
+    .navbar__menus .feather-menu {
+      color: #71686C;
+      padding-right: 8px; }
 
 body {
   -webkit-box-sizing: border-box;
