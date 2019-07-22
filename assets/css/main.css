@@ -57,6 +57,12 @@ p {
   font-family: "Baskerville", "Times New Roman", Times, serif;
   color: #887F7A; }
 
+input[type=text] {
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #71686C;
+  opacity: 1; }
+
 .row {
   align-items: flex-start; }
 

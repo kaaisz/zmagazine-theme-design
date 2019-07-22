@@ -35,6 +35,13 @@ p {
   color: $color-susu;
 }
 
+input[type=text] {
+  font-family: $font-accent;
+  font-weight: $thin;
+  color: $color-murasakinezu;
+  opacity: 1;
+}
+
 .row {
   align-items: flex-start;
 }
