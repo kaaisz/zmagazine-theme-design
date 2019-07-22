@@ -21,9 +21,13 @@ p {
   color: $color-murasakinezu
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus,
+a:visited {
   color: $color-murasakinezu;
   text-decoration: none;
+  outline: none;
 }
 
 p {
