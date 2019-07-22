@@ -29,8 +29,17 @@
     align-items: center;
     justify-content: space-between;
 
+    .form_search {
+      display: none;
+
+      @include mq(xl) {
+        display: inline-block;
+      }
+    }
+
     .feather-search,
     .feather-menu {
+      width: calc(24px + 16px);
       color: $color-murasakinezu;
       padding-right: 8px;
     }
